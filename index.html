@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>미러 기프트</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="topbar-left">
+      <h2 class="site-title">미러 기프트</h2>
+
+      <button class="menu-btn" id="btn-all" onclick="setFilter('전체')">전체</button>
+      <button class="menu-btn" id="btn-burn" onclick="setFilter('화상')">화상</button>
+      <button class="menu-btn" id="btn-ex" onclick="setFilter('EX')">EX</button>
+      <button class="menu-btn danger-btn" onclick="resetData()">선택 기프트 초기화</button>
+    </div>
+
+    <div class="auth-panel">
+      <div id="auth-guest-buttons" class="auth-guest-buttons">
+        <button class="auth-btn" onclick="openLoginModal()">로그인</button>
+        <button class="auth-btn" onclick="openSignupModal()">회원가입</button>
+      </div>
+
+      <div id="auth-status" class="auth-status">비로그인 상태</div>
+
+      <div id="auth-tools" class="auth-tools" style="display:none;">
+        <button class="auth-btn logout-btn" onclick="logout()">로그아웃</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div id="list"></div>
+  </div>
+
+  <!-- 로그인 모달 -->
+  <div id="login-modal" class="modal-overlay" style="display:none;" onclick="closeLoginModal(event)">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeLoginModal()">✕</button>
+
+      <h3 class="modal-title">로그인</h3>
+
+      <input id="login-id" class="modal-input" type="text" placeholder="아이디">
+      <input id="login-pw" class="modal-input" type="password" placeholder="비밀번호">
+
+      <button class="modal-login-btn" onclick="login()">로그인</button>
+
+      <div class="signup-link-wrap">
+        <button class="signup-link-btn" onclick="switchToSignup()">회원가입</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 회원가입 1단계 -->
+  <div id="signup-modal-step1" class="modal-overlay" style="display:none;" onclick="closeSignupStep1Modal(event)">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeSignupStep1Modal()">✕</button>
+
+      <h3 class="modal-title">회원가입</h3>
+
+      <input id="signup-id" class="modal-input" type="text" placeholder="아이디">
+      <input id="signup-pw" class="modal-input" type="password" placeholder="비밀번호">
+      <input id="signup-pw-confirm" class="modal-input" type="password" placeholder="비밀번호 확인">
+
+      <button class="modal-login-btn" onclick="goToSignupStep2()">다음</button>
+    </div>
+  </div>
+
+  <!-- 회원가입 2단계 -->
+  <div id="signup-modal-step2" class="modal-overlay" style="display:none;" onclick="closeSignupStep2Modal(event)">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeSignupStep2Modal()">✕</button>
+
+      <h3 class="modal-title">닉네임 설정</h3>
+
+      <input id="signup-nickname" class="modal-input" type="text" placeholder="닉네임">
+
+      <div class="signup-link-wrap" style="margin-bottom:10px;">
+        <button class="signup-link-btn" onclick="backToSignupStep1()">이전</button>
+      </div>
+
+      <button class="modal-login-btn" onclick="signup()">회원가입 완료</button>
+    </div>
+  </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import {
+      getAuth,
+      onAuthStateChanged,
+      createUserWithEmailAndPassword,
+      signInWithEmailAndPassword,
+      signOut
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+    import {
+      getFirestore,
+      doc,
+      setDoc,
+      getDoc
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAx0HcriIiQAk5txhrsTO4k7iwrOVhqSMA",
+      authDomain: "mirrorgift-hsp43.firebaseapp.com",
+      projectId: "mirrorgift-hsp43",
+      storageBucket: "mirrorgift-hsp43.appspot.com",
+      messagingSenderId: "521946888140",
+      appId: "1:521946888140:web:8fdfcef490b7f4bf7d0f69"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+
+    window.auth = auth;
+    window.db = db;
+    window.onAuthStateChanged = onAuthStateChanged;
+    window.createUserWithEmailAndPassword = createUserWithEmailAndPassword;
+    window.signInWithEmailAndPassword = signInWithEmailAndPassword;
+    window.signOutFirebase = signOut;
+    window.doc = doc;
+    window.setDoc = setDoc;
+    window.getDoc = getDoc;
+
+    window.dispatchEvent(new Event("firebase-ready"));
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
