@@ -12,6 +12,7 @@ const gifts = [
   { id: "ex_1", name: "부", img: "images/ex/부.png", keyword: "EX", checked: false },
   { id: "ex_2", name: "어떤 철학", img: "images/ex/어떤철학.png", keyword: "EX", checked: false },
 
+  // 화상
   { id: "burn_1_1", name: "융해된 파라핀", img: "images/burn/융해된파라핀.png", keyword: "화상", grade: 1, checked: false },
   { id: "burn_1_2", name: "재에서 재로", img: "images/burn/재에서재로.png", keyword: "화상", grade: 1, checked: false },
   { id: "burn_1_3", name: "타오르는 지성", img: "images/burn/타오르는지성.png", keyword: "화상", grade: 1, checked: false },
@@ -42,7 +43,58 @@ const gifts = [
   { id: "burn_4_3", name: "부화하지 않은 불씨", img: "images/burn/부화하지않은불씨.png", keyword: "화상", grade: 4, checked: false },
   { id: "burn_4_4", name: "진혼", img: "images/burn/진혼.png", keyword: "화상", grade: 4, checked: false },
   { id: "burn_4_5", name: "훔쳐온 불꽃", img: "images/burn/훔쳐온불꽃.png", keyword: "화상", grade: 4, checked: false },
-  { id: "burn_4_6", name: "제식 복장 - 리우 협회", img: "images/burn/제식복장리우협회.png", keyword: "화상", grade: 4, checked: false }
+  { id: "burn_4_6", name: "제식 복장 - 리우 협회", img: "images/burn/제식복장리우협회.png", keyword: "화상", grade: 4, checked: false },
+
+  // 출혈
+  { id: "bleed_1_1", name: "녹슨 입마개", img: "images/bleed/녹슨입마개.png", keyword: "출혈", grade: 1, checked: false },
+  { id: "bleed_1_2", name: "늘어붙은 쇠말뚝", img: "images/bleed/늘어붙은쇠말뚝.png", keyword: "출혈", grade: 1, checked: false },
+  { id: "bleed_1_3", name: "덧붙인 반창고", img: "images/bleed/덧붙인반창고.png", keyword: "출혈", grade: 1, checked: false },
+  { id: "bleed_1_4", name: "억류된 찬송", img: "images/bleed/억류된찬송.png", keyword: "출혈", grade: 1, checked: false },
+  { id: "bleed_1_5", name: "옭아맨 타래", img: "images/bleed/옭아맨타래.png", keyword: "출혈", grade: 1, checked: false },
+
+  { id: "bleed_2_1", name: "경외심", img: "images/bleed/경외심.png", keyword: "출혈", grade: 2, checked: false },
+  { id: "bleed_2_2", name: "밀라르카", img: "images/bleed/밀라르카.png", keyword: "출혈", grade: 2, checked: false },
+  { id: "bleed_2_3", name: "상처붙이", img: "images/bleed/상처붙이.png", keyword: "출혈", grade: 2, checked: false },
+  { id: "bleed_2_4", name: "작고 나쁠 인형", img: "images/bleed/작고나쁠인형.png", keyword: "출혈", grade: 2, checked: false },
+  { id: "bleed_2_5", name: "전혈 플라스크", img: "images/bleed/전혈플라스크.png", keyword: "출혈", grade: 2, checked: false },
+  { id: "bleed_2_6", name: "흰 목화", img: "images/bleed/흰목화.png", keyword: "출혈", grade: 2, checked: false },
+  { id: "bleed_2_7", name: "결정화된 혈액", img: "images/bleed/결정화된혈액.png", keyword: "출혈", grade: 2, checked: false },
+  { id: "bleed_2_8", name: "못과 망치의 책", img: "images/bleed/못과망치의책.png", keyword: "출혈", grade: 2, checked: false },
+  { id: "bleed_2_9", name: "불결함", img: "images/bleed/불결함.png", keyword: "출혈", grade: 2, checked: false },
+  { id: "bleed_2_10", name: "오염된 실과 바늘", img: "images/bleed/오염된실과바늘.png", keyword: "출혈", grade: 2, checked: false },
+  { id: "bleed_2_11", name: "워킹 베이스", img: "images/bleed/워킹베이스.png", keyword: "출혈", grade: 2, checked: false },
+  { id: "bleed_2_12", name: "치사랑", img: "images/bleed/치사랑.png", keyword: "출혈", grade: 2, checked: false },
+  { id: "bleed_2_13", name: "범작", img: "images/bleed/범작.png", keyword: "출혈", grade: 2, checked: false },
+  { id: "bleed_2_14", name: "새하얀 캔버스", img: "images/bleed/새하얀캔버스.png", keyword: "출혈", grade: 2, checked: false },
+
+  { id: "bleed_3_1", name: "녹슨 커터 나이프", img: "images/bleed/녹슨커터나이프.png", keyword: "출혈", grade: 3, checked: false },
+  { id: "bleed_3_2", name: "안식처", img: "images/bleed/안식처.png", keyword: "출혈", grade: 3, checked: false },
+  { id: "bleed_3_3", name: "연기와 철조망", img: "images/bleed/연기와철조망.png", keyword: "출혈", grade: 3, checked: false },
+  { id: "bleed_3_4", name: "혈향도래", img: "images/bleed/혈향도래.png", keyword: "출혈", grade: 3, checked: false },
+  { id: "bleed_3_5", name: "찢어진 피주머니", img: "images/bleed/찢어진피주머니.png", keyword: "출혈", grade: 3, checked: false },
+  { id: "bleed_3_6", name: "갇힌 구더기", img: "images/bleed/갇힌구더기.png", keyword: "출혈", grade: 3, checked: false },
+  { id: "bleed_3_7", name: "부리 모양 목걸이", img: "images/bleed/부리모양목걸이.png", keyword: "출혈", grade: 3, checked: false },
+  { id: "bleed_3_8", name: "열선 무기", img: "images/bleed/열선무기.png", keyword: "출혈", grade: 3, checked: false },
+  { id: "bleed_3_9", name: "조각난 칼날", img: "images/bleed/조각난칼날.png", keyword: "출혈", grade: 3, checked: false },
+  { id: "bleed_3_10", name: "하모닉스", img: "images/bleed/하모닉스.png", keyword: "출혈", grade: 3, checked: false },
+  { id: "bleed_3_11", name: "경혈식 글레이브", img: "images/bleed/경혈식글레이브.png", keyword: "출혈", grade: 3, checked: false },
+  { id: "bleed_3_12", name: "라만차랜드 자유이용권", img: "images/bleed/라만차랜드자유이용권.png", keyword: "출혈", grade: 3, checked: false },
+  { id: "bleed_3_13", name: "승리의 증표", img: "images/bleed/승리의증표.png", keyword: "출혈", grade: 3, checked: false },
+  { id: "bleed_3_14", name: "피로 된 살점, 살점으로 된 피", img: "images/bleed/피로된살점살점으로된피.png", keyword: "출혈", grade: 3, checked: false },
+  { id: "bleed_3_15", name: "치성", img: "images/bleed/치성.png", keyword: "출혈", grade: 3, checked: false },
+
+  { id: "bleed_4_1", name: "매혹 조각", img: "images/bleed/매혹조각.png", keyword: "출혈", grade: 4, checked: false },
+  { id: "bleed_4_2", name: "붉게 물든 목화", img: "images/bleed/붉게물든목화.png", keyword: "출혈", grade: 4, checked: false },
+  { id: "bleed_4_3", name: "가족의 원망", img: "images/bleed/가족의원망.png", keyword: "출혈", grade: 4, checked: false },
+  { id: "bleed_4_4", name: "떨어진 한 방울", img: "images/bleed/떨어진한방울.png", keyword: "출혈", grade: 4, checked: false },
+  { id: "bleed_4_5", name: "탐하는 가시", img: "images/bleed/탐하는가시.png", keyword: "출혈", grade: 4, checked: false },
+  { id: "bleed_4_6", name: "퍼레이드의 가면", img: "images/bleed/퍼레이드의가면.png", keyword: "출혈", grade: 4, checked: false },
+  { id: "bleed_4_7", name: "피안개", img: "images/bleed/피안개.png", keyword: "출혈", grade: 4, checked: false },
+  { id: "bleed_4_8", name: "출혈성 쇼크", img: "images/bleed/출혈성쇼크.png", keyword: "출혈", grade: 4, checked: false },
+  { id: "bleed_4_9", name: "완전함", img: "images/bleed/완전함.png", keyword: "출혈", grade: 4, checked: false },
+  { id: "bleed_4_10", name: "미니어처 대관람차", img: "images/bleed/미니어처대관람차.png", keyword: "출혈", grade: 4, checked: false },
+  { id: "bleed_4_11", name: "수작", img: "images/bleed/수작.png", keyword: "출혈", grade: 4, checked: false },
+  { id: "bleed_4_12", name: "절경", img: "images/bleed/절경.png", keyword: "출혈", grade: 4, checked: false }
 ];
 
 const list = document.getElementById("list");
@@ -80,6 +132,7 @@ function createGiftCard(gift) {
   const keywordClass =
     gift.keyword === "EX" ? "keyword ex" :
     gift.keyword === "화상" ? "keyword burn" :
+    gift.keyword === "출혈" ? "keyword bleed" :
     "keyword";
 
   div.innerHTML = `
@@ -115,13 +168,19 @@ function createGiftCard(gift) {
 
 function createBurnCell(gift) {
   const cell = document.createElement("div");
-  cell.className = "burn-cell" + (gift.checked ? " checked" : "");
+  cell.className = "burn-cell compact-cell" + (gift.checked ? " checked" : "");
+
+  const badgeMap = {
+    "화상": "images/burn/화상.png",
+    "출혈": "images/bleed/출혈.png"
+  };
 
   cell.innerHTML = `
     <div class="mini-wrap">
       <img src="images/frame.png" class="mini-frame" alt="프레임">
       <div class="mini-grade">${toRoman(gift.grade)}</div>
       <img src="${gift.img}" class="mini-icon" alt="${gift.name}" onerror="this.style.display='none'">
+      ${badgeMap[gift.keyword] ? `<img src="${badgeMap[gift.keyword]}" class="keyword-badge" alt="${gift.keyword}">` : ""}
     </div>
     <div class="burn-name">${gift.name}</div>
   `;
@@ -144,37 +203,24 @@ function createBurnCell(gift) {
 
 function renderBurnSection(section, filtered) {
   const container = document.createElement("div");
-  container.className = "burn-section";
+  container.className = "grade-grid-2x2 compact-grade-grid";
 
-  const grades = [...new Set(filtered.map(g => g.grade))].sort((a, b) => a - b);
-
-  grades.forEach(grade => {
+  [1, 2, 3, 4].forEach(grade => {
     const gradeGifts = filtered.filter(g => g.grade === grade);
-    const rows = Math.ceil(gradeGifts.length / 4);
 
     const block = document.createElement("div");
-    block.className = "grade-block";
+    block.className = `grade-block grid-grade-block compact-grade-block grade-${grade} keyword-${filtered[0].keyword}`;
 
     const gradeCell = document.createElement("div");
-    gradeCell.className = "burn-grade";
+    gradeCell.className = "burn-grade grid-burn-grade compact-burn-grade";
     gradeCell.textContent = toRoman(grade);
-    gradeCell.style.height = `${rows * 98}px`;
 
     const cells = document.createElement("div");
-    cells.className = "burn-cells";
+    cells.className = "burn-cells grid-burn-cells compact-burn-cells";
 
     gradeGifts.forEach(gift => {
       cells.appendChild(createBurnCell(gift));
     });
-
-    const remainder = gradeGifts.length % 4;
-    if (remainder !== 0) {
-      for (let i = 0; i < 4 - remainder; i++) {
-        const empty = document.createElement("div");
-        empty.className = "burn-cell empty";
-        cells.appendChild(empty);
-      }
-    }
 
     block.appendChild(gradeCell);
     block.appendChild(cells);
@@ -184,59 +230,97 @@ function renderBurnSection(section, filtered) {
   section.appendChild(container);
 }
 
+function renderKeywordSection(group) {
+  const filtered = gifts.filter(g => g.keyword === group.keyword);
+  if (filtered.length === 0) return null;
+
+  const section = document.createElement("div");
+  section.className = "section side-section";
+
+  const title = document.createElement("div");
+  title.className = "section-title";
+
+  if (group.titleImage) {
+    title.innerHTML = `
+      <img src="${group.titleImage}" alt="${group.keyword}" onerror="this.style.display='none'">
+      <span>${group.keyword}</span>
+    `;
+  } else {
+    title.textContent = group.keyword;
+  }
+
+  section.appendChild(title);
+
+  const rowBox = document.createElement("div");
+  rowBox.className = "section-box";
+
+  if (group.keyword === "EX") {
+    const row = document.createElement("div");
+    row.className = "gift-row";
+
+    filtered.forEach(gift => {
+      row.appendChild(createGiftCard(gift));
+    });
+
+    rowBox.appendChild(row);
+  } else {
+    renderBurnSection(rowBox, filtered);
+  }
+
+  section.appendChild(rowBox);
+  return section;
+}
+
 function render() {
   list.innerHTML = "";
 
-  const groups = [
-    { keyword: "화상", titleImage: "images/burn/화상.png" },
-    { keyword: "EX" }
-  ];
+  const burnGroup = { keyword: "화상", titleImage: "images/burn/화상.png" };
+  const bleedGroup = { keyword: "출혈", titleImage: "images/bleed/출혈.png" };
+  const exGroup = { keyword: "EX" };
 
-  groups.forEach(group => {
-    if (currentFilter !== "전체" && currentFilter !== group.keyword) return;
+  if (currentFilter === "전체") {
+    const topLayout = document.createElement("div");
+    topLayout.className = "top-layout";
 
-    const filtered = gifts.filter(g => g.keyword === group.keyword);
-    if (filtered.length === 0) return;
+    const leftArea = document.createElement("div");
+    leftArea.className = "left-area";
 
-    const section = document.createElement("div");
-    section.className = "section";
+    const rightArea = document.createElement("div");
+    rightArea.className = "right-area";
 
-    const title = document.createElement("div");
-    title.className = "section-title";
+    const burnSection = renderKeywordSection(burnGroup);
+    const bleedSection = renderKeywordSection(bleedGroup);
 
-    if (group.titleImage) {
-      title.innerHTML = `
-        <img src="${group.titleImage}" alt="${group.keyword}" onerror="this.style.display='none'">
-        <span>${group.keyword}</span>
-      `;
-    } else {
-      title.textContent = group.keyword;
-    }
+    if (burnSection) leftArea.appendChild(burnSection);
+    if (bleedSection) rightArea.appendChild(bleedSection);
 
-    section.appendChild(title);
+    topLayout.appendChild(leftArea);
+    topLayout.appendChild(rightArea);
 
-    const rowBox = document.createElement("div");
-    rowBox.className = "section-box";
+    list.appendChild(topLayout);
 
-    if (group.keyword === "EX") {
-      const row = document.createElement("div");
-      row.className = "gift-row";
+    const exSection = renderKeywordSection(exGroup);
+    if (exSection) list.appendChild(exSection);
 
-      filtered.forEach(gift => {
-        row.appendChild(createGiftCard(gift));
-      });
+    return;
+  }
 
-      rowBox.appendChild(row);
-      section.appendChild(rowBox);
-    }
+  if (currentFilter === "화상") {
+    const burnSection = renderKeywordSection(burnGroup);
+    if (burnSection) list.appendChild(burnSection);
+    return;
+  }
 
-    if (group.keyword === "화상") {
-      renderBurnSection(rowBox, filtered);
-      section.appendChild(rowBox);
-    }
+  if (currentFilter === "출혈") {
+    const bleedSection = renderKeywordSection(bleedGroup);
+    if (bleedSection) list.appendChild(bleedSection);
+    return;
+  }
 
-    list.appendChild(section);
-  });
+  if (currentFilter === "EX") {
+    const exSection = renderKeywordSection(exGroup);
+    if (exSection) list.appendChild(exSection);
+  }
 }
 
 async function saveGiftState() {
@@ -245,9 +329,7 @@ async function saveGiftState() {
   try {
     await window.setDoc(
       window.doc(window.db, "users", window.auth.currentUser.uid),
-      {
-        selectedGifts: Array.from(selectedGiftIds)
-      },
+      { selectedGifts: Array.from(selectedGiftIds) },
       { merge: true }
     );
   } catch (error) {
@@ -288,12 +370,14 @@ function setFilter(type) {
   currentFilter = type;
 
   document.getElementById("btn-all").classList.remove("active");
-  document.getElementById("btn-ex").classList.remove("active");
   document.getElementById("btn-burn").classList.remove("active");
+  document.getElementById("btn-bleed").classList.remove("active");
+  document.getElementById("btn-ex").classList.remove("active");
 
   if (type === "전체") document.getElementById("btn-all").classList.add("active");
-  if (type === "EX") document.getElementById("btn-ex").classList.add("active");
   if (type === "화상") document.getElementById("btn-burn").classList.add("active");
+  if (type === "출혈") document.getElementById("btn-bleed").classList.add("active");
+  if (type === "EX") document.getElementById("btn-ex").classList.add("active");
 
   render();
 }
@@ -434,9 +518,7 @@ async function signup() {
 
     await window.setDoc(
       window.doc(window.db, "usernames", username),
-      {
-        uid
-      }
+      { uid }
     );
 
     pendingSignup = {
