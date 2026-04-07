@@ -7,6 +7,8 @@ body {
   background: #151515;
   color: #f1f1f1;
   font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* 상단바 */
@@ -107,50 +109,79 @@ body {
   grid-template-columns: 1fr 340px;
   gap: 24px;
   padding: 20px;
+  height: calc(100vh - 78px);
+  overflow: hidden;
 }
 
 .gift-section,
-.admin-section {
+.admin-section,
+.preset-section {
   background: #1b1b1d;
   border: 1px solid #323232;
   border-radius: 16px;
   padding: 18px;
 }
 
+.gift-section {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.admin-section,
+.preset-section {
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.admin-section::-webkit-scrollbar,
+.preset-section::-webkit-scrollbar {
+  display: none;
+}
+
 .gift-section h2,
-.admin-section h2 {
+.admin-section h2,
+.preset-section h2 {
   margin: 0;
   color: #ffd36a;
   font-size: 22px;
+  line-height: 1;
 }
 
 /* 섹션 헤더 */
 .section-header {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* 핵심 */
-  gap: 16px; /* 제목이랑 필터 간격 */
+  gap: 14px;
   margin-bottom: 18px;
-} 
+}
 
-/* 등급 필터 */
+.section-header h2 {
+  margin: 0;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
 .grade-filter {
   display: flex;
   align-items: center;
   gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 4px;
 }
 
-.section-header h2 {
-  margin-bottom: 4px;
-}
-
+/* 등급 버튼 */
 .grade-btn {
   min-width: 60px;
   height: 48px;
   padding: 0 14px;
   position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   background: linear-gradient(180deg, #2f2f2f, #252525);
   border: 1px solid #5a5a5a;
@@ -173,7 +204,6 @@ body {
 }
 
 .grade-btn.active {
-  padding-left: 14px;
   border-color: #ffd36a;
   background: linear-gradient(180deg, #3a3021, #241c12);
   color: #ffbf1f;
@@ -192,6 +222,19 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(170px, 170px));
   gap: 14px;
   align-items: start;
+
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 4px;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.gift-list::-webkit-scrollbar {
+  display: none;
 }
 
 .gift-card {
@@ -265,7 +308,7 @@ body {
   z-index: 2;
 }
 
-/* 등급 표시 */
+/* 일반 등급 표시 */
 .grade-badge {
   position: absolute;
   top: 6px;
@@ -286,6 +329,30 @@ body {
     0 0 2px rgba(255, 196, 0, 0.95),
     0 0 6px rgba(255, 145, 0, 0.4),
     2px 2px 0 rgba(70, 30, 0, 0.95);
+}
+
+/* EX 전용 표시 */
+.ex-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1;
+  color: #7CFC00;
+  text-shadow:
+    -1px -1px 0 #002800,
+     1px -1px 0 #002800,
+    -1px  1px 0 #002800,
+     1px  1px 0 #002800,
+     0px  0px 6px rgba(124, 252, 0, 0.9),
+     0px  0px 12px rgba(124, 252, 0, 0.6);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.gift-card-ex .gift-icon-wrap {
+  filter: saturate(1.04) brightness(1.02);
 }
 
 /* 키워드 아이콘 */
@@ -480,10 +547,182 @@ body {
   background: #3a3a3a;
 }
 
+/* 프리셋 패널 */
+.side-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.preset-login-guide {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #bcbcbc;
+}
+
+.preset-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.preset-card {
+  background: linear-gradient(180deg, #232323, #1c1c1c);
+  border: 1px solid #3f3f3f;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.preset-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.preset-slot {
+  font-size: 13px;
+  font-weight: 800;
+  color: #ffd36a;
+}
+
+.preset-count {
+  font-size: 12px;
+  color: #bdbdbd;
+}
+
+.preset-name {
+  min-height: 20px;
+  margin-bottom: 10px;
+  color: #f1f1f1;
+  font-size: 14px;
+  font-weight: 700;
+  word-break: break-word;
+}
+
+.preset-name.empty {
+  color: #8a8a8a;
+}
+
+.preset-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.preset-actions button {
+  border: 1px solid #555;
+  border-radius: 8px;
+  background: #2f2f2f;
+  color: #fff;
+  padding: 9px 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.preset-actions button:hover:not(:disabled) {
+  border-color: #ffd36a;
+  box-shadow: 0 0 8px rgba(255, 211, 106, 0.18);
+}
+
+.preset-actions button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+/* 기타 버튼 */
+.select-reset-btn {
+  border: 1px solid #8a6a2a;
+}
+
+.select-reset-btn:hover {
+  border-color: #ffd36a;
+  box-shadow: 0 0 8px rgba(255, 211, 106, 0.25);
+}
+
+/* 키워드 색 */
+.keyword-all { color: #e5e5e5; }
+.keyword-burn { color: #ff3636; }
+.keyword-bleed { color: #ff6f2d; }
+.keyword-vibration { color: #f2d16b; }
+.keyword-rupture { color: #3ed0be; }
+.keyword-sinking { color: #0011ff; }
+.keyword-breath { color: #d9ebff; }
+.keyword-charge { color: #8c00ff; }
+.keyword-slash { color: #dcdcdc; }
+.keyword-pierce { color: #cfcfcf; }
+.keyword-blunt { color: #bfbfbf; }
+.keyword-common { color: #ffffff; }
+.keyword-ex { color: #b7ff2a; }
+
+/* 키워드 버튼 */
+.keyword-btn {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #2f2f2f, #252525);
+  border: 1px solid #5a5a5a;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+}
+
+.keyword-btn:hover {
+  border-color: #9a9a9a;
+  background: linear-gradient(180deg, #383838, #2d2d2d);
+  transform: translateY(-1px);
+}
+
+.keyword-btn.active {
+  border-color: #ffd36a;
+  background: linear-gradient(180deg, #3a3021, #241c12);
+  color: #ffbf1f;
+  text-shadow:
+    0 0 2px rgba(255, 196, 0, 0.9),
+    0 0 6px rgba(255, 145, 0, 0.35),
+    1px 1px 0 rgba(70, 30, 0, 0.9);
+  box-shadow:
+    0 0 10px rgba(255, 211, 106, 0.35),
+    inset 0 0 8px rgba(255, 200, 80, 0.12);
+}
+
+.keyword-btn.keyword-ex.active {
+  border-color: #aaff00;
+  color: #b7ff2a;
+  text-shadow:
+    0 0 4px rgba(170, 255, 0, 0.9),
+    0 0 10px rgba(170, 255, 0, 0.5);
+  box-shadow:
+    0 0 12px rgba(170, 255, 0, 0.5),
+    inset 0 0 8px rgba(170, 255, 0, 0.15);
+  background: linear-gradient(180deg, #24301a, #141c0f);
+}
+
+.reset-btn {
+  border: 1px solid #bd0000;
+}
+
+.reset-btn:hover {
+  border-color: #ff6b6b;
+  box-shadow: 0 0 8px rgba(255, 80, 80, 0.4);
+}
+
+.reset-btn:active {
+  border-color: #ff3b3b;
+  background: rgba(255, 60, 60, 0.15);
+}
+
 /* 반응형 */
 @media (max-width: 980px) {
   .main-layout {
     grid-template-columns: 1fr;
+  }
+
+  .side-panel {
+    order: 2;
   }
 }
 
@@ -506,4 +745,93 @@ body {
   .site-title {
     font-size: 24px;
   }
+}
+
+.preset-name-input {
+  width: 100%;
+  margin-bottom: 10px;
+  background: #111;
+  color: #f1f1f1;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  outline: none;
+}
+
+.preset-name-input:focus {
+  border-color: #ffd36a;
+  box-shadow: 0 0 8px rgba(255, 211, 106, 0.12);
+}
+
+.preset-name-input:disabled {
+  color: #8a8a8a;
+  background: #1a1a1a;
+  cursor: default;
+}
+
+.preset-view-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+  padding: 10px 12px;
+  background: linear-gradient(180deg, #232323, #1c1c1c);
+  border: 1px solid #3f3f3f;
+  border-radius: 12px;
+}
+
+.preset-view-title {
+  color: #f3e7a2;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.preset-card.clickable {
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.preset-card.clickable:hover {
+  border-color: #ffd36a;
+  transform: translateY(-1px);
+  box-shadow: 0 0 8px rgba(255, 211, 106, 0.12);
+}
+
+.preset-name-input {
+  width: 100%;
+  margin-bottom: 10px;
+  background: #111;
+  color: #f1f1f1;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  outline: none;
+}
+
+.preset-name-input:focus {
+  border-color: #ffd36a;
+  box-shadow: 0 0 8px rgba(255, 211, 106, 0.12);
+}
+
+.preset-name-input[readonly] {
+  cursor: default;
+}
+
+.preset-name-input.empty {
+  color: #8a8a8a;
+}
+
+.preset-name-input:disabled {
+  color: #8a8a8a;
+  background: #1a1a1a;
+  cursor: default;
+}
+
+.preset-actions-4 {
+  grid-template-columns: repeat(4, 1fr);
 }

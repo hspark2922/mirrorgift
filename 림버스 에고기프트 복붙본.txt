@@ -1,0 +1,469 @@
+#화상
+burn_01 | 융해된 파라핀 | 화상 | 1 | images/burn/융해된파라핀.png
+burn_02 | 재에서 재로 | 화상 | 1 | images/burn/재에서재로.png
+burn_03 | 타오르는 지성 | 화상 | 1 | images/burn/타오르는지성.png
+burn_04 | 편광 | 화상 | 1 | images/burn/편광.png
+
+burn_05 | 울화통 | 화상 | 2 | images/burn/울화통.png
+burn_06 | 일점타격논리회로 | 화상 | 2 | images/burn/일점타격논리회로.png
+burn_07 | 작열우모 | 화상 | 2 | images/burn/작열우모.png
+burn_08 | 지옥나비의 꿈 | 화상 | 2 | images/burn/지옥나비의꿈.png
+burn_09 | 만년 동안 끓는 솥 | 화상 | 2 | images/burn/만년동안끓는솥.png
+burn_10 | 만년 화룻불 | 화상 | 2 | images/burn/만년화룻불.png
+burn_11 | 혈염도 | 화상 | 2 | images/burn/혈염도.png
+
+burn_12 | 그을린 원반 | 화상 | 3 | images/burn/그을린원반.png
+burn_13 | 먼지에서 먼지로 | 화상 | 3 | images/burn/먼지에서먼지로.png
+burn_14 | 불빛꽃 | 화상 | 3 | images/burn/불빛꽃.png
+burn_15 | 뜨거운 육즙 다리살 | 화상 | 3 | images/burn/뜨거운육즙다리살.png
+burn_16 | 로열 젤리 퍼퓸 | 화상 | 3 | images/burn/로열젤리퍼퓸.png
+burn_17 | 잔불 | 화상 | 3 | images/burn/잔불.png
+burn_18 | 재점화 플러그 | 화상 | 3 | images/burn/재점화플러그.png
+burn_19 | 점화 장갑 | 화상 | 3 | images/burn/점화장갑.png
+burn_20 | 붉은색 넥타이 | 화상 | 3 | images/burn/붉은색넥타이.png
+burn_21 | 시험 추출 : 홍염살 | 화상 | 3 | images/burn/시험추출홍염살.png
+burn_22 | 요리 비법 전서 | 화상 | 3 | images/burn/요리비법전서.png
+
+burn_23 | 불꽃의 편린 | 화상 | 4 | images/burn/불꽃의편린.png
+burn_24 | 업화 조각 | 화상 | 4 | images/burn/업화조각.png
+burn_25 | 부화하지 않은 불씨 | 화상 | 4 | images/burn/부화하지않은불씨.png
+burn_26 | 진혼 | 화상 | 4 | images/burn/진혼.png
+burn_27 | 훔쳐온 불꽃 | 화상 | 4 | images/burn/훔쳐온불꽃.png
+burn_28 | 제식 복장 - 리우 협회 | 화상 | 4 | images/burn/제식복장리우협회.png
+
+#출혈
+bleed_01 | 녹슨 입마개 | 출혈 | 1 | images/bleed/녹슨입마개.png
+bleed_02 | 늘어붙은 쇠말뚝 | 출혈 | 1 | images/bleed/늘어붙은쇠말뚝.png
+bleed_03 | 덧붙인 반창고 | 출혈 | 1 | images/bleed/덧붙인반창고.png
+bleed_04 | 억류된 찬송 | 출혈 | 1 | images/bleed/억류된찬송.png
+bleed_05 | 옭아맨 타래 | 출혈 | 1 | images/bleed/육아맨타래.png
+
+bleed_06 | 경외심 | 출혈 | 2 | images/bleed/경외심.png
+bleed_07 | 밀라르카 | 출혈 | 2 | images/bleed/밀라르카.png
+bleed_08 | 상처붙이 | 출혈 | 2 | images/bleed/상처붙이.png
+bleed_09 | 작고 나쁠 인형 | 출혈 | 2 | images/bleed/작고나쁨인형.png
+bleed_10 | 전혈 플라스크 | 출혈 | 2 | images/bleed/전혈플라스크.png
+bleed_11 | 흰 목화 | 출혈 | 2 | images/bleed/흰목화.png
+bleed_12 | 결정화된 혈액 | 출혈 | 2 | images/bleed/결정화된혈액.png
+bleed_13 | 못과 망치의 책 | 출혈 | 2 | images/bleed/못과망치의책.png
+bleed_14 | 불결함 | 출혈 | 2 | images/bleed/불결함.png
+bleed_15 | 오염된 실과 바늘 | 출혈 | 2 | images/bleed/오염된실과바늘.png
+bleed_16 | 워킹 베이스 | 출혈 | 2 | images/bleed/워킹베이스.png
+bleed_17 | 치사랑 | 출혈 | 2 | images/bleed/치사랑.png
+bleed_18 | 범작 | 출혈 | 2 | images/bleed/범작.png
+bleed_19 | 새하얀 캔버스 | 출혈 | 2 | images/bleed/새하얀캔버스.png
+
+bleed_20 | 녹슨 커터 나이프 | 출혈 | 3 | images/bleed/녹슨커터나이프.png
+bleed_21 | 안식처 | 출혈 | 3 | images/bleed/안식처.png
+bleed_22 | 연기와 철조망 | 출혈 | 3 | images/bleed/연기와철조망.png
+bleed_23 | 혈향래 | 출혈 | 3 | images/bleed/혈항도래.png
+bleed_24 | 찢어진 피주머니 | 출혈 | 3 | images/bleed/찢어진피주머니.png
+bleed_25 | 갇힌 구더기 | 출혈 | 3 | images/bleed/갇힌구더기.png
+bleed_26 | 부리 모양 목걸이 | 출혈 | 3 | images/bleed/부리모양목걸이.png
+bleed_27 | 열선 무기 | 출혈 | 3 | images/bleed/열선무기.png
+bleed_28 | 조각난 칼날 | 출혈 | 3 | images/bleed/조각난칼날.png
+bleed_29 | 하모닉스 | 출혈 | 3 | images/bleed/하모니스.png
+bleed_30 | 경혈식 글레이브 | 출혈 | 3 | images/bleed/경험식글레이브.png
+bleed_31 | 라만차랜드 자유이용권 | 출혈 | 3 | images/bleed/라만차랜드자유이용권.png
+bleed_32 | 승리의 증표 | 출혈 | 3 | images/bleed/승리의증표.png
+bleed_33 | 피로 된 살점, 살점으로 된 피 | 출혈 | 3 | images/bleed/피로된살점살점으로된피.png
+bleed_34 | 치성 | 출혈 | 3 | images/bleed/치성.png
+
+bleed_35 | 매혹 조각 | 출혈 | 4 | images/bleed/매혹조각.png
+bleed_36 | 붉게 물든 목화 | 출혈 | 4 | images/bleed/붉게물든목화.png
+bleed_37 | 가족의 원망 | 출혈 | 4 | images/bleed/가족의원망.png
+bleed_38 | 떨어진 한 방울 | 출혈 | 4 | images/bleed/떨어진한방울.png
+bleed_39 | 탐하는 가시 | 출혈 | 4 | images/bleed/탐하는가시.png
+bleed_40 | 퍼레이드의 가면 | 출혈 | 4 | images/bleed/퍼레이드의가면.png
+bleed_41 | 피안개 | 출혈 | 4 | images/bleed/피안개.png
+bleed_42 | 출혈성 쇼크 | 출혈 | 4 | images/bleed/출혈성쇼크.png
+bleed_43 | 완전함 | 출혈 | 4 | images/bleed/완전함.png
+bleed_44 | 미니어처 대관람차 | 출혈 | 4 | images/bleed/미니어처대관람차.png
+bleed_45 | 수작 | 출혈 | 4 | images/bleed/수작.png
+bleed_46 | 절경 | 출혈 | 4 | images/bleed/절경.png
+
+#진동
+vibration_01 | 극독성 외피 | 진동 | 1 | images/vibration/극독성외피.png
+vibration_02 | 낚시 다이버전스 | 진동 | 1 | images/vibration/낚시다이버전스.png
+vibration_03 | 보석 진동자 | 진동 | 1 | images/vibration/보석진동자.png
+vibration_04 | 초록빛 결실 | 진동 | 1 | images/vibration/초록빛결실.png
+vibration_05 | 기름때 찌든 스패너 | 진동 | 1 | images/vibration/기름때찌든스패너.png
+vibration_06 | 불 꺼진 랜턴 | 진동 | 1 | images/vibration/불꺼진랜턴.png
+
+vibration_07 | 감합된 톱니바퀴 | 진동 | 2 | images/vibration/감합된톱니바퀴.png
+vibration_08 | 거울 촉각 공감각 | 진동 | 2 | images/vibration/거울촉각공감각.png
+vibration_09 | 고혈 | 진동 | 2 | images/vibration/고혈.png
+vibration_10 | 시큼한 주향 | 진동 | 2 | images/vibration/시큼한주향.png
+vibration_11 | 잔향 | 진동 | 2 | images/vibration/잔향.png
+vibration_12 | 진동형 팔찌 | 진동 | 2 | images/vibration/진동형팔찌.png
+vibration_13 | 흔들리는 술통 | 진동 | 2 | images/vibration/흔들리는술통.png
+vibration_14 | 녹슨 시계침 | 진동 | 2 | images/vibration/녹슨시계침.png
+vibration_15 | 빛바랜 시계 케이스 | 진동 | 2 | images/vibration/빛바랜시계케이스.png
+vibration_16 | 오더메이드 | 진동 | 2 | images/vibration/오더메이드.png
+vibration_17 | 애칭 시계침 | 진동 | 2 | images/vibration/애칭시계침.png
+vibration_18 | 은빛 시계 케이스 | 진동 | 2 | images/vibration/은빛시계케이스.png
+vibration_19 | 흑철마갑 | 진동 | 2 | images/vibration/흑철마갑.png
+vibration_20 | 엇간 시간 | 진동 | 2 | images/vibration/엇간시간.png
+
+vibration_21 | 녹아내린 눈알 | 진동 | 3 | images/vibration/녹아내린눈알.png
+vibration_22 | 생체 맹독 바이알 | 진동 | 3 | images/vibration/생체맹독바이알.png
+vibration_23 | 진실의 종 | 진동 | 3 | images/vibration/진실의종.png
+vibration_24 | 톱니바퀴 태엽 | 진동 | 3 | images/vibration/톱니바퀴태엽.png
+vibration_25 | 낙수의 잔 | 진동 | 3 | images/vibration/낙수의잔.png
+vibration_26 | 강제 얽힘 시퀀스 장치 | 진동 | 3 | images/vibration/강제얽힘시퀀스장치.png
+vibration_27 | 달궈진 망치 | 진동 | 3 | images/vibration/달궈진망치.png
+vibration_28 | 진원점 | 진동 | 3 | images/vibration/진원점.png
+vibration_29 | 손거울 | 진동 | 3 | images/vibration/손거울.png
+vibration_30 | 그림자 괴물 | 진동 | 3 | images/vibration/그림자괴물.png
+
+vibration_31 | 타성 조각 | 진동 | 4 | images/vibration/타성조각.png
+vibration_32 | 폭우 | 진동 | 4 | images/vibration/폭우.png
+vibration_33 | 초정밀 시간 가속 장치 | 진동 | 4 | images/vibration/초정밀시간가속장치.png
+vibration_34 | 카포를 위하여 | 진동 | 4 | images/vibration/카포를위하여.png
+vibration_35 | 연성진동 | 진동 | 4 | images/vibration/연성진동.png
+vibration_36 | 무진팔방종 | 진동 | 4 | images/vibration/무진팔방종.png
+vibration_37 | 회중시계: 타입 E | 진동 | 4 | images/vibration/회중시계타입E.png
+vibration_38 | 회중시계: 타입 L | 진동 | 4 | images/vibration/회중시계타입L.png
+vibration_39 | 회중시계: 타입 P | 진동 | 4 | images/vibration/회중시계타입P.png
+vibration_40 | 회중시계: 타입 Y | 진동 | 4 | images/vibration/회중시계타입Y.png
+
+#파열
+rupture_01 | 부서진 리볼버 | 파열 | 1 | images/rupture/부서진리볼버.png
+rupture_02 | 부적 묶음 | 파열 | 1 | images/rupture/부적묶음.png
+rupture_03 | 뼈 말뚝 | 파열 | 1 | images/rupture/뼈말뚝.png
+rupture_04 | 장미 면류관 | 파열 | 1 | images/rupture/장미면류관.png
+rupture_05 | 가시오랏줄 | 파열 | 1 | images/rupture/가시오랏줄.png
+rupture_06 | 가시 올가미 | 파열 | 1 | images/rupture/가시올가미.png
+rupture_07 | 유연 화약 | 파열 | 1 | images/rupture/유연화약.png
+rupture_08 | 해진 우산 | 파열 | 1 | images/rupture/해진우산.png
+
+rupture_09 | 형광색 램프 | 파열 | 2 | images/rupture/형광색램프.png
+rupture_10 | 종말의 파편 | 파열 | 2 | images/rupture/종말의파편.png
+rupture_11 | 괴문자 부적 | 파열 | 2 | images/rupture/괴문자부적.png
+rupture_12 | 덕목 - 용 | 파열 | 2 | images/rupture/덕목용.png
+rupture_13 | 덕목 - 인 | 파열 | 2 | images/rupture/덕목인.png
+rupture_14 | 덕목 - 지 | 파열 | 2 | images/rupture/덕목지.png
+rupture_15 | 모각 | 파열 | 2 | images/rupture/모각.png
+rupture_16 | 흑단 브로치 | 파열 | 2 | images/rupture/흑단브로치.png
+
+rupture_17 | 근무용 통상 배터리 | 파열 | 3 | images/rupture/근무용통상배터리.png
+rupture_18 | 벼락가지 | 파열 | 3 | images/rupture/벼락가지.png
+rupture_19 | 죽음바라기 | 파열 | 3 | images/rupture/죽음바라기.png
+rupture_20 | 가시 전투화 | 파열 | 3 | images/rupture/가시전투화.png
+rupture_21 | 강화제 MK.4 | 파열 | 3 | images/rupture/강화제MK4.png
+rupture_22 | 목이 뻑뻑 가슴살 | 파열 | 3 | images/rupture/목이뻑뻑가슴살.png
+rupture_23 | 새겨넣어진 괴문자 | 파열 | 3 | images/rupture/새겨넣어진괴문자.png
+rupture_24 | 잔가지 | 파열 | 3 | images/rupture/잔가지.png
+
+rupture_25 | 크랲게 뇌수 담금주 | 파열 | 4 | images/rupture/크랭커뇌수담금주.png
+rupture_26 | 거울 속의 꽃 | 파열 | 4 | images/rupture/거울속의꽃.png
+rupture_27 | 시험 추출 : 초롱 | 파열 | 4 | images/rupture/시험추출초롱.png
+rupture_28 | 기괴한 석상 | 파열 | 4 | images/rupture/기괴한석상.png
+rupture_29 | 욕망 조각 | 파열 | 4 | images/rupture/욕망조각.png
+rupture_30 | 쾌감 | 파열 | 4 | images/rupture/쾌감.png
+rupture_31 | 황홀경 | 파열 | 4 | images/rupture/황홀경.png
+rupture_32 | 파탄 | 파열 | 4 | images/rupture/파탄.png
+rupture_33 | 이전칠자 | 파열 | 4 | images/rupture/이전칠자.png
+rupture_34 | 절차탁마 | 파열 | 4 | images/rupture/절차탁마.png
+rupture_35 | 부치지 못한 편지 | 파열 | 4 | images/rupture/부치지못한편지.png
+rupture_36 | 생강꽃, 안경 그리고 전해진 편지 | 파열 | 4 | images/rupture/생강꽃안경그리고전해진편지.png
+
+#침잠
+sinking_01 | 가시밭길 | 침잠 | 1 | images/sinking/가시밭길.png
+sinking_02 | 고목 함정 | 침잠 | 1 | images/sinking/고목함정.png
+sinking_03 | 넝마 | 침잠 | 1 | images/sinking/넝마.png
+sinking_04 | 머리 없는 초상화 | 침잠 | 1 | images/sinking/머리없는초상화.png
+sinking_05 | 칸타빌레 | 침잠 | 1 | images/sinking/칸타빌레.png
+
+sinking_06 | 녹아내린 시계태엽 | 침잠 | 2 | images/sinking/녹아내린시계태엽.png
+sinking_07 | 뒤엉킨 뼛조각 | 침잠 | 2 | images/sinking/뒤엉킨뼛조각.png
+sinking_08 | 유골 부스러기 | 침잠 | 2 | images/sinking/유골부스러기.png
+sinking_09 | 장엄 | 침잠 | 2 | images/sinking/장엄.png
+sinking_10 | 적색 지령 | 침잠 | 2 | images/sinking/적색지령.png
+sinking_11 | 빛바랜 외투 | 침잠 | 2 | images/sinking/빛바랜외투.png
+sinking_12 | 귀신 들린 신발 | 침잠 | 2 | images/sinking/귀신들린신발.png
+sinking_13 | 선택 받지 못한 자 | 침잠 | 2 | images/sinking/선택받지못한자.png
+sinking_14 | 얼어붙은 아우성 | 침잠 | 2 | images/sinking/얼어붙은아우성.png
+sinking_15 | 정신 오염 가속 가스 | 침잠 | 2 | images/sinking/정신오염가속가스.png
+sinking_16 | 흘러내린 엔케팔린 | 침잠 | 2 | images/sinking/흘러내린엔케팔린.png
+
+sinking_17 | 고장난 나침반 | 침잠 | 3 | images/sinking/고장난나침반.png
+sinking_18 | 머나먼 별 | 침잠 | 3 | images/sinking/머나먼별.png
+sinking_19 | 파란 별조각 | 침잠 | 3 | images/sinking/파란별조각.png
+sinking_20 | 한겨울 밤의 악몽 | 침잠 | 3 | images/sinking/한겨울밤의악몽.png
+sinking_21 | 노이즈 섞인 무전기 | 침잠 | 3 | images/sinking/노이즈섞인무전기.png
+sinking_22 | 눈물로 벼려낸 검 | 침잠 | 3 | images/sinking/눈물로벼려낸검.png
+sinking_23 | 분홍 꽃잎 | 침잠 | 3 | images/sinking/분홍꽃잎.png
+sinking_24 | 안식 | 침잠 | 3 | images/sinking/안식.png
+sinking_25 | 누군가의 단말기 | 침잠 | 3 | images/sinking/누군가의단말기.png
+sinking_26 | 모형 저택 오르골 | 침잠 | 3 | images/sinking/모형저택오르골.png
+sinking_27 | 서지 글로브 | 침잠 | 3 | images/sinking/서지글로브.png
+
+sinking_28 | 미적 감각 | 침잠 | 4 | images/sinking/미적감각.png
+sinking_29 | 잠식 조각 | 침잠 | 4 | images/sinking/잠식조각.png
+sinking_30 | 굴절 유리관 | 침잠 | 4 | images/sinking/굴절유리관.png
+sinking_31 | 먹장구름 | 침잠 | 4 | images/sinking/먹장구름.png
+sinking_32 | 검은 악보 | 침잠 | 4 | images/sinking/검은악보.png
+sinking_33 | 덮칠 파도 | 침잠 | 4 | images/sinking/덮칠파도.png
+sinking_34 | 분홍빛 꽃잎다발 | 침잠 | 4 | images/sinking/분홍빛꽃잎다발.png
+sinking_35 | 서릿발 발자국 | 침잠 | 4 | images/sinking/서릿발발자국.png
+
+#호흡
+breath_01 | 녹빛 겉날개 | 호흡 | 1 | images/breath/녹빛겉날개.png
+breath_02 | 데블스 셰어 | 호흡 | 1 | images/breath/데블스셰어.png
+breath_03 | 장식된 편자 | 호흡 | 1 | images/breath/장식된편자.png
+breath_04 | 추억의 펜던트 | 호흡 | 1 | images/breath/추억의펜던트.png
+breath_05 | 털방울 모자 | 호흡 | 1 | images/breath/털방울모자.png
+
+breath_06 | 낡은 목각 인형 | 호흡 | 2 | images/breath/낡은목각인형.png
+breath_07 | 네뷸라이저 | 호흡 | 2 | images/breath/네뷸라이저.png
+breath_08 | 돌무덤 | 호흡 | 2 | images/breath/돌무덤.png
+breath_09 | 물부리 | 호흡 | 2 | images/breath/물부리.png
+breath_10 | 어느 날의 기억 | 호흡 | 2 | images/breath/어느날의기억.png
+breath_11 | 엔젤스 컷 | 호흡 | 2 | images/breath/엔젤스컷.png
+breath_12 | 거대한 선물 보따리 | 호흡 | 2 | images/breath/거대한선물보따리.png
+breath_13 | 톱니 파편 | 호흡 | 2 | images/breath/톱니파편.png
+breath_14 | 누군가의 푸른 검 | 호흡 | 2 | images/breath/누군가의푸른검.png
+breath_15 | 작살 의족 | 호흡 | 2 | images/breath/작살의족.png
+
+breath_16 | 네잎클로버 | 호흡 | 3 | images/breath/네잎클로버.png
+breath_17 | 미련 | 호흡 | 3 | images/breath/미련.png
+breath_18 | 엔도르핀 키트 | 호흡 | 3 | images/breath/엔도르핀키트.png
+breath_19 | 근접 전술 교본 | 호흡 | 3 | images/breath/근접전술교본.png
+breath_20 | 부서진 칼날 | 호흡 | 3 | images/breath/부서진칼날.png
+breath_21 | 물 속의 달 | 호흡 | 3 | images/breath/물속의달.png
+breath_22 | 지령의 보살핌 | 호흡 | 3 | images/breath/지령의보살핌.png
+breath_23 | 추억 | 호흡 | 3 | images/breath/추억.png
+
+breath_24 | 교만 조각 | 호흡 | 4 | images/breath/교만조각.png
+breath_25 | 명경지수 | 호흡 | 4 | images/breath/명경지수.png
+breath_26 | 해진 삿갓 | 호흡 | 4 | images/breath/해진삿갓.png
+breath_27 | 고래의 심장 | 호흡 | 4 | images/breath/고래의심장.png
+breath_28 | 애달픈 남숨 | 호흡 | 4 | images/breath/애달픈남숨.png
+breath_29 | 복주머니 | 호흡 | 4 | images/breath/복주머니.png
+breath_30 | 캐스크 스피리츠 | 호흡 | 4 | images/breath/캐스크스피리츠.png
+breath_31 | 기쁜 봉제인형 | 호흡 | 4 | images/breath/기쁜봉제인형.png
+breath_32 | 모든 악의 끝 | 호흡 | 4 | images/breath/모든악의끝.png
+breath_33 | 앞을 비추는 가스등 | 호흡 | 4 | images/breath/앞을비추는가스등.png
+
+#충전
+charge_01 | 무정전 전원장치 | 충전 | 1 | images/charge/무정전전원장치.png
+charge_02 | 손목 보호대 | 충전 | 1 | images/charge/손목보호대.png
+charge_03 | 이력서 | 충전 | 1 | images/charge/이력서.png
+charge_04 | 제한 풀린 제세동기 | 충전 | 1 | images/charge/제한풀린제세동기.png
+charge_05 | 1B 타입 팔각 볼트 | 충전 | 1 | images/charge/1B타입팔각볼트.png
+charge_06 | 사원증 | 충전 | 1 | images/charge/사원증.png
+charge_07 | 순찰용 손전등 | 충전 | 1 | images/charge/순찰용손전등.png
+charge_08 | 야간투시경 | 충전 | 1 | images/charge/야간투시경.png
+
+charge_09 | 휴대용 전지 소켓 | 충전 | 2 | images/charge/휴대용전지소켓.png
+charge_10 | 미니어처 전봇대 | 충전 | 2 | images/charge/미니어처전봇대.png
+charge_11 | 마법소녀의 애정 어린 선물 | 충전 | 2 | images/charge/마법소녀의애정어린선물.png
+charge_12 | 생체 발전형 배터리 | 충전 | 2 | images/charge/생체발전형배터리.png
+
+charge_13 | 심장 리액트 모듈 | 충전 | 3 | images/charge/심장리액트모듈.png
+charge_14 | 의체관절 서브모터 | 충전 | 3 | images/charge/의체관절서브모터.png
+charge_15 | 어긋난 트랜지스터 | 충전 | 3 | images/charge/어긋난트랜지스터.png
+charge_16 | 전격부 | 충전 | 3 | images/charge/전격부.png
+charge_17 | W사 보급 모자 | 충전 | 3 | images/charge/W사보급모자.png
+charge_18 | 모조발전기 | 충전 | 3 | images/charge/모조발전기.png
+charge_19 | 물리 간섭 보호장 | 충전 | 3 | images/charge/물리간섭보호장.png
+charge_20 | 피뢰침 | 충전 | 3 | images/charge/피뢰침.png
+charge_21 | 다한 쓸모, 맺힌 증오 | 충전 | 3 | images/charge/다한쓸모맺힌증오.png
+charge_22 | 휴대용 역장 배터리 | 충전 | 3 | images/charge/휴대용역장배터리.png
+charge_23 | E식 차원 단검 | 충전 | 3 | images/charge/E식차원단검.png
+charge_24 | 남겨진 차원 건틀릿 | 충전 | 3 | images/charge/남겨진차원건틀릿.png
+charge_25 | 변형 추출 : AEDD | 충전 | 3 | images/charge/변형추출AEDD.png
+charge_26 | 인슐레이터 | 충전 | 3 | images/charge/인슐레이터.png
+
+charge_27 | 마찰 조각 | 충전 | 4 | images/charge/마찰조각.png
+charge_28 | 충전식 장갑 | 충전 | 4 | images/charge/충전식장갑.png
+charge_29 | 제 1종 영구기관 | 충전 | 4 | images/charge/제1종영구기관.png
+charge_30 | 제 5종 영구기관 | 충전 | 4 | images/charge/제5종영구기관.png
+
+charge_31 | 과충전된 배터리 | 충전 | 4 | images/charge/과충전된배터리.png
+charge_32 | 영구동력 서브모터 | 충전 | 4 | images/charge/영구동력서브모터.png
+charge_33 | 자율 작동식 관절 | 충전 | 4 | images/charge/자율작동식관절.png
+charge_34 | 하츠 파워드 쥬얼 | 충전 | 4 | images/charge/하츠파워드쥬얼.png
+charge_35 | C형 정리 요원 장비 세트 | 충전 | 4 | images/charge/C형정리요원장비세트.png
+
+#참격
+slash_01 | 닳고 닳은 숫돌 | 참격 | 1 | images/slash/닳고닳은숫돌.png
+slash_02 | 수술용 메스 | 참격 | 1 | images/slash/수술용메스.png
+slash_03 | 위장된 화평 | 참격 | 1 | images/slash/위장된화평.png
+
+slash_04 | 결의 | 참격 | 2 | images/slash/결의.png
+slash_05 | 꿈을 꾸는 전기양 | 참격 | 2 | images/slash/꿈을꾸는전기양.png
+slash_06 | 재단용 가위 | 참격 | 2 | images/slash/재단용가위.png
+slash_07 | 짧은 케인 소드 | 참격 | 2 | images/slash/짧은케인소드.png
+
+slash_08 | 구름무늬 호리병 | 참격 | 3 | images/slash/구름무늬호리병.png
+slash_09 | 선고의 순간 | 참격 | 3 | images/slash/선고의순간.png
+slash_10 | 그림자 삿갓 | 참격 | 3 | images/slash/그림자삿갓.png
+slash_11 | 녹슨 칼자루 | 참격 | 3 | images/slash/녹슨칼자루.png
+
+slash_12 | 마음을 닫는 붉은 천 | 참격 | 4 | images/slash/마음을닫는붉은천.png
+slash_13 | 붉은 색술 | 참격 | 4 | images/slash/붉은색술.png
+slash_14 | 낡은 칼자루 | 참격 | 4 | images/slash/낡은칼자루.png
+slash_15 | 깨어진 대검 | 참격 | 4 | images/slash/깨어진대검.png
+slash_16 | 잘려나간 기억 | 참격 | 4 | images/slash/잘려나간기억.png
+slash_17 | 낡은 도포 | 참격 | 4 | images/slash/낡은도포.png
+slash_18 | 떼구름 | 참격 | 4 | images/slash/떼구름.png
+slash_19 | 부동 | 참격 | 4 | images/slash/부동.png
+slash_20 | 장관 | 참격 | 4 | images/slash/장관.png
+slash_21 | 탁마 | 참격 | 4 | images/slash/탁마.png
+
+#관통
+pierce_01 | 고탄성강 신발 | 관통 | 1 | images/pierce/고탄성강신발.png
+pierce_02 | 끈적거리는 진액 | 관통 | 1 | images/pierce/끈적거리는진액.png
+pierce_03 | 목공용 대못 | 관통 | 1 | images/pierce/목공용대못.png
+
+pierce_04 | 수집하는 해골 | 관통 | 2 | images/pierce/수집하는해골.png
+pierce_05 | 증명의 깃털 | 관통 | 2 | images/pierce/증명의깃털.png
+pierce_06 | 찢어진 밴들리어 | 관통 | 2 | images/pierce/찢어진밴들리어.png
+pierce_07 | 축복이었던 | 관통 | 2 | images/pierce/축복이었던.png
+
+pierce_08 | 버려진 가지 | 관통 | 3 | images/pierce/버려진가지.png
+pierce_09 | 틀어진 소매 | 관통 | 3 | images/pierce/틀어진소매.png
+pierce_10 | 평등 | 관통 | 3 | images/pierce/평등.png
+pierce_11 | 흑염 파이프 | 관통 | 3 | images/pierce/흑염파이프.png
+
+pierce_12 | 구멍난 기억 | 관통 | 4 | images/pierce/구멍난기억.png
+pierce_13 | 듀얼교본 3권 | 관통 | 4 | images/pierce/듀얼교본3권.png
+pierce_14 | 데스페라도 | 관통 | 4 | images/pierce/데스페라도.png
+
+#타격
+blunt_01 | 동티 | 타격 | 1 | images/blunt/동티.png
+blunt_02 | 연육 망치 | 타격 | 1 | images/blunt/연육망치.png
+blunt_03 | 차원분리수거함 | 타격 | 1 | images/blunt/차원분리수거함.png
+
+blunt_04 | 가장 낮은 별 | 타격 | 2 | images/blunt/가장낮은별.png
+blunt_05 | 시간 굴레 | 타격 | 2 | images/blunt/시간굴레.png
+blunt_06 | 압박 붕대 | 타격 | 2 | images/blunt/압박붕대.png
+blunt_07 | 오늘의 표정 | 타격 | 2 | images/blunt/오늘의표정.png
+blunt_08 | 포켓 암기 노트 | 타격 | 2 | images/blunt/포켓암기노트.png
+blunt_09 | 강화 문신 - 증지 | 타격 | 2 | images/blunt/강화문신증지.png
+
+blunt_10 | 굳게 쥔 상 | 타격 | 3 | images/blunt/굳게쥔상.png
+blunt_11 | 차원지각변환체 | 타격 | 3 | images/blunt/차원지각변환체.png
+blunt_12 | 도둑맞은 해결사 잡지 | 타격 | 3 | images/blunt/도둑맞은해결사잡지.png
+blunt_13 | 의리 사슬 | 타격 | 3 | images/blunt/의리사슬.png
+
+blunt_14 | 바스라진 기억 | 타격 | 4 | images/blunt/바스라진기억.png
+blunt_15 | 앙갚음 장부 | 타격 | 4 | images/blunt/앙갚음장부.png
+blunt_16 | 중지의 규율 | 타격 | 4 | images/blunt/중지의규율.png
+blunt_17 | 영속하는 인연 사슬 | 타격 | 4 | images/blunt/영속하는인연사슬.png
+
+#범용
+common_001 | 도착증 | 범용 | 1 | images/common/도착증.png
+common_002 | 내일의 운세 | 범용 | 1 | images/common/내일의운세.png
+common_003 | 문자 석판 | 범용 | 1 | images/common/문자석판.png
+common_004 | 블러디 가젯 | 범용 | 1 | images/common/블러디가젯.png
+common_005 | 저주 인형 | 범용 | 1 | images/common/저주인형.png
+common_006 | 쪽빛 지포라이터 | 범용 | 1 | images/common/쪽빛지포라이터.png
+common_007 | 편견 | 범용 | 1 | images/common/편견.png
+common_008 | 혈액 포집팩 | 범용 | 1 | images/common/혈액포집팩.png
+common_009 | 일반석 할인 바우처 | 범용 | 1 | images/common/일반석할인바우처.png
+common_010 | 귀기 서린 환도 | 범용 | 1 | images/common/귀기서린환도.png
+common_011 | 그날의 기록 | 범용 | 1 | images/common/그날의기록.png
+common_012 | 빛바랜 건틀릿 | 범용 | 1 | images/common/빛바랜건틀릿.png
+common_013 | 거미줄 | 범용 | 1 | images/common/거미줄.png
+common_014 | 포장용 상자 | 범용 | 1 | images/common/포장용상자.png
+
+common_015 | 게걸스러운 망치 | 범용 | 2 | images/common/게걸스러운망치.png
+common_016 | 귀로 | 범용 | 2 | images/common/귀로.png
+common_017 | 대기만성형 타투 | 범용 | 2 | images/common/대기만성형타투.png
+common_018 | 리베이트 토큰 | 범용 | 2 | images/common/리베이트토큰.png
+common_019 | 생존의 이정표 | 범용 | 2 | images/common/생존의이정표.png
+common_020 | 신상품 팜플렛 | 범용 | 2 | images/common/신상품팜플렛.png
+common_021 | 오라클 | 범용 | 2 | images/common/오라클.png
+common_022 | 주홍 나방떼 | 범용 | 2 | images/common/주홍나방떼.png
+common_023 | 진통제 | 범용 | 2 | images/common/진통제.png
+common_024 | 잿빛 코트 | 범용 | 2 | images/common/잿빛코트.png
+common_025 | 카르밀라 | 범용 | 2 | images/common/카르밀라.png
+common_026 | 커피와 종이학 | 범용 | 2 | images/common/커피와종이학.png
+common_027 | 특별 카탈로그 | 범용 | 2 | images/common/특별카탈로그.png
+common_028 | 플라스크 속의 아이 | 범용 | 2 | images/common/플라스크속의아이.png
+common_029 | 황금색 항아리 | 범용 | 2 | images/common/황금색항아리.png
+common_030 | 가치처분 | 범용 | 2 | images/common/가치처분.png
+common_031 | 검은 장부 | 범용 | 2 | images/common/검은장부.png
+common_032 | 경고장 | 범용 | 2 | images/common/경고장.png
+common_033 | 반짝이는 폐품 | 범용 | 2 | images/common/반짝이는폐품.png
+common_034 | 소흥주 | 범용 | 2 | images/common/소흥주.png
+common_035 | 신속한 지휘 | 범용 | 2 | images/common/신속한지휘.png
+common_036 | 아이스크림 통조림 | 범용 | 2 | images/common/아이스크림통조림.png
+common_037 | 트라우마 방지장 | 범용 | 2 | images/common/트라우마방지장.png
+common_038 | 핏빛 갈기 | 범용 | 2 | images/common/핏빛갈기.png
+common_039 | 강인환 | 범용 | 2 | images/common/강인환.png
+common_040 | 경멸의 시선의 경멸 | 범용 | 2 | images/common/경멸의시선의경멸.png
+common_041 | 긴급 부여형 수사관 배지 | 범용 | 2 | images/common/긴급부여형수사관배지.png
+common_042 | 깨진 안경 | 범용 | 2 | images/common/깨진안경.png
+common_043 | 대양전 접지 플러그 | 범용 | 2 | images/common/대양전접지플러그.png
+common_044 | 마을을 지킬 작살 | 범용 | 2 | images/common/마을을지킬작살.png
+common_045 | 먹어치우는 큐브 | 범용 | 2 | images/common/먹어치우는큐브.png
+common_046 | 메트로놈 | 범용 | 2 | images/common/메트로놈.png
+common_047 | 뱀 허물 | 범용 | 2 | images/common/뱀허물.png
+common_048 | 버틀러식 포박술 | 범용 | 2 | images/common/버틀러식포박술.png
+common_049 | 불 꺼진 촛대 | 범용 | 2 | images/common/불꺼진촛대.png
+
+common_050 | 강요된 무게 | 범용 | 3 | images/common/강요된무게.png
+common_051 | 녹슨 기념 주화 | 범용 | 3 | images/common/녹슨기념주화.png
+common_052 | 디스크 파편 | 범용 | 3 | images/common/디스크파편.png
+common_053 | 리뉴얼 굿즈 | 범용 | 3 | images/common/리뉴얼굿즈.png
+common_054 | 사전 예약 할인권 | 범용 | 3 | images/common/사전예약할인권.png
+common_055 | 성대한 환대 | 범용 | 3 | images/common/성대한환대.png
+common_056 | 여우비 | 범용 | 3 | images/common/여우비.png
+common_057 | 체험형 플랜 가이드 | 범용 | 3 | images/common/체험형플랜가이드.png
+common_058 | 특별 계약 | 범용 | 3 | images/common/특별계약.png
+common_059 | 프레스티지 카드 | 범용 | 3 | images/common/프레스티지카드.png
+common_060 | 환상 사냥 | 범용 | 3 | images/common/환상사냥.png
+common_061 | 환상통 | 범용 | 3 | images/common/환상통.png
+common_062 | 휴대용 구급상자 | 범용 | 3 | images/common/휴대용구급상자.png
+common_063 | 가능성 | 범용 | 3 | images/common/가능성.png
+common_064 | 신검합일 | 범용 | 3 | images/common/신검합일.png
+common_065 | 황금빛 시간 | 범용 | 3 | images/common/황금빛시간.png
+common_066 | 가시나무 관 | 범용 | 3 | images/common/가시나무관.png
+common_067 | 고초 | 범용 | 3 | images/common/고초.png
+common_068 | 날카로운 실과 바늘 | 범용 | 3 | images/common/날카로운실과바늘.png
+common_069 | 만화경 | 범용 | 3 | images/common/만화경.png
+common_070 | 묵시적 계약 갱신 | 범용 | 3 | images/common/묵시적계약갱신.png
+common_071 | 생강꽃 가지 | 범용 | 3 | images/common/생강꽃가지.png
+common_072 | 선불 시간 영수증 | 범용 | 3 | images/common/선불시간영수증.png
+common_073 | 슬픈 봉제인형 | 범용 | 3 | images/common/슬픈봉제인형.png
+common_074 | 아직 따뜻한 커피 | 범용 | 3 | images/common/아직따뜻한커피.png
+common_075 | 작전 승인 카드 | 범용 | 3 | images/common/작전승인카드.png
+common_076 | 잿빛 별자리의 가호 | 범용 | 3 | images/common/잿빛별자리의가호.png
+common_077 | 찰랑이는 연료통 | 범용 | 3 | images/common/찰랑이는연료통.png
+common_078 | 치프 버틀러의 비급서 | 범용 | 3 | images/common/치프버틀러의비급서.png
+common_079 | 탱고 닭양념장 | 범용 | 3 | images/common/탱고닭양념장.png
+common_080 | 통상 작전용 장비 | 범용 | 3 | images/common/통상작전용장비.png
+common_081 | 만능 도구 | 범용 | 3 | images/common/만능도구.png
+common_082 | 부서진 바이올린 | 범용 | 3 | images/common/부서진바이올린.png
+common_083 | 원목 술잔 | 범용 | 3 | images/common/원목술잔.png
+common_084 | 포장용 끈 | 범용 | 3 | images/common/포장용끈.png
+
+common_085 | 믿음 | 범용 | 4 | images/common/믿음.png
+common_086 | 비밀 유지 서약서 | 범용 | 4 | images/common/비밀유지서약서.png
+common_087 | 오래된 조각상 | 범용 | 4 | images/common/오래된조각상.png
+common_088 | 인연 조각 | 범용 | 4 | images/common/인연조각.png
+common_089 | 도시를 사랑하는 당신을 위하여 | 범용 | 4 | images/common/도시를사랑하는당신을위하여.png
+common_090 | 거짓 광배 | 범용 | 4 | images/common/거짓광배.png
+common_091 | 굴레 | 범용 | 4 | images/common/굴레.png
+common_092 | 깨어질 화포 | 범용 | 4 | images/common/깨어질화포.png
+common_093 | 꼬미의 작은 선물 | 범용 | 4 | images/common/꼬미의작은선물.png
+common_094 | 누군가 놓쳐버린 사원증 | 범용 | 4 | images/common/누군가놓쳐버린사원증.png
+common_095 | 봉이 인형 | 범용 | 4 | images/common/봉이인형.png
+common_096 | 왕의 잔재 | 범용 | 4 | images/common/왕의잔재.png
+common_097 | 인연 얽힘 | 범용 | 4 | images/common/인연얽힘.png
+common_098 | 확률과 선택 | 범용 | 4 | images/common/확률과선택.png
+common_099 | 고위험 작전용 장비 | 범용 | 4 | images/common/고위험작전용장비.png
+common_100 | 선물 | 범용 | 4 | images/common/선물.png
+common_101 | 조그맣고 근사한 바이올린 | 범용 | 4 | images/common/조그맣고근사한바이올린.png
+
+common_102 | 달의 기억 | 범용 | 5 | images/common/달의기억.png
+
+#EX
+EX_001 | 부 | EX | 0 | images/ex/부.png
+EX_002 | 어떤 철학 | EX | 0 | images/ex/어떤철학.png
+
+총 409개
