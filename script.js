@@ -159,8 +159,7 @@ function updateGradeFilterUI() {
     btn.classList.toggle("active", selectedGrades.includes(grade));
 
     if (grade === 5) {
-      btn.style.display = hideGrade5 ? "flex" : "flex";
-      if (hideGrade5) btn.style.display = "none";
+      btn.style.display = hideGrade5 ? "none" : "flex";
     } else {
       btn.style.display = "flex";
     }
@@ -476,7 +475,6 @@ async function saveSelectedGifts() {
   try {
     const uid = window.auth.currentUser.uid;
     const ref = window.fb.doc(window.db, "users", uid);
-
     await window.fb.setDoc(ref, { selectedGiftIds }, { merge: true });
   } catch (error) {
     console.error("선택 기프트 저장 실패:", error);
@@ -606,7 +604,6 @@ async function loadPreset(slotId) {
   selectedGiftIds = [...preset.giftIds];
   await saveSelectedGifts();
   renderGifts();
-
   alert(`"${preset.name || slotId}" 프리셋 불러오기 완료`);
 }
 
@@ -636,13 +633,76 @@ async function deletePreset(slotId) {
     }, { merge: true });
 
     delete currentPresets[slotId];
+    if (activePresetSlotId === slotId) {
+      activePresetSlotId = null;
+    }
+    editingPresetSlotId = null;
     renderPresetPanel();
+    updatePresetViewBar();
+    renderGifts();
     alert("프리셋 삭제 완료");
   } catch (error) {
     console.error("프리셋 삭제 실패:", error);
     alert(error.message || "프리셋 삭제 실패");
   }
 }
+
+window.startPresetRename = function (slotId) {
+  editingPresetSlotId = slotId;
+  renderPresetPanel();
+
+  const input = document.getElementById(`preset-name-${slotId}`);
+  if (input) {
+    input.removeAttribute("readonly");
+    input.focus();
+    input.select();
+  }
+};
+
+window.finishPresetRename = async function (slotId) {
+  if (!window.auth?.currentUser) {
+    alert("로그인 후 사용할 수 있습니다.");
+    return;
+  }
+
+  const input = document.getElementById(`preset-name-${slotId}`);
+  if (!input) return;
+
+  const newName = input.value.trim();
+  if (!newName) {
+    alert("이름을 입력해주세요.");
+    input.focus();
+    return;
+  }
+
+  const existing = currentPresets?.[slotId];
+  const giftIds = Array.isArray(existing?.giftIds) ? existing.giftIds : [];
+
+  try {
+    const uid = window.auth.currentUser.uid;
+    const ref = window.fb.doc(window.db, "users", uid);
+
+    const nextPreset = {
+      name: newName,
+      giftIds,
+      updatedAt: new Date().toISOString()
+    };
+
+    await window.fb.setDoc(ref, {
+      presets: {
+        [slotId]: nextPreset
+      }
+    }, { merge: true });
+
+    currentPresets[slotId] = nextPreset;
+    editingPresetSlotId = null;
+    renderPresetPanel();
+    updatePresetViewBar();
+  } catch (error) {
+    console.error("프리셋 이름 수정 실패:", error);
+    alert("프리셋 이름 수정 실패");
+  }
+};
 
 window.savePreset = savePreset;
 window.loadPreset = loadPreset;
@@ -960,8 +1020,9 @@ function setupEnterKeySubmit() {
         signup();
       }
     });
-  })
+  });
 }
+
 async function getUserDocByUid(uid) {
   const ref = window.fb.doc(window.db, "users", uid);
   const snap = await window.fb.getDoc(ref);
@@ -985,6 +1046,8 @@ async function findUserByUserId(userId) {
     ...docSnap.data()
   };
 }
+
+window.findUserByUserId = findUserByUserId;
 
 window.signup = async function () {
   const userId = document.getElementById("signup-id")?.value.trim();
@@ -1108,63 +1171,6 @@ function setupAuthUI() {
     renderPresetPanel();
   });
 }
-
-window.startPresetRename = function (slotId) {
-  editingPresetSlotId = slotId;
-  renderPresetPanel();
-
-  const input = document.getElementById(`preset-name-${slotId}`);
-  if (input) {
-    input.removeAttribute("readonly");
-    input.focus();
-    input.select();
-  }
-};
-
-window.finishPresetRename = async function (slotId) {
-  if (!window.auth?.currentUser) {
-    alert("로그인 후 사용할 수 있습니다.");
-    return;
-  }
-
-  const input = document.getElementById(`preset-name-${slotId}`);
-  if (!input) return;
-
-  const newName = input.value.trim();
-  if (!newName) {
-    alert("이름을 입력해주세요.");
-    input.focus();
-    return;
-  }
-
-  const existing = currentPresets?.[slotId];
-  const giftIds = Array.isArray(existing?.giftIds) ? existing.giftIds : [];
-
-  try {
-    const uid = window.auth.currentUser.uid;
-    const ref = window.fb.doc(window.db, "users", uid);
-
-    const nextPreset = {
-      name: newName,
-      giftIds,
-      updatedAt: new Date().toISOString()
-    };
-
-    await window.fb.setDoc(ref, {
-      presets: {
-        [slotId]: nextPreset
-      }
-    }, { merge: true });
-
-    currentPresets[slotId] = nextPreset;
-    editingPresetSlotId = null;
-    renderPresetPanel();
-    updatePresetViewBar();
-  } catch (error) {
-    console.error("프리셋 이름 수정 실패:", error);
-    alert("프리셋 이름 수정 실패");
-  }
-};
 
 /* =========================
    유틸

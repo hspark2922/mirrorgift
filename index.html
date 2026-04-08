@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>미러 기프트</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mobile.css" />
 </head>
 <body>
   <div class="topbar">
@@ -28,15 +29,13 @@
       <button class="menu-btn keyword-btn keyword-ex" data-keyword="EX" onclick="toggleKeywordFilter('EX')">EX</button>
 
       <button class="menu-btn keyword-btn reset-btn" onclick="resetKeywordFilter()">초기화</button>
-      <button class="menu-btn select-reset-btn" onclick="resetSelectedGifts()">선택 기프트 초기화</button>
     </div>
 
     <div class="auth-panel">
+      <button class="mobile-menu-btn" type="button">☰</button>
       <button class="auth-btn" id="login-open-btn" onclick="openLoginModal()">로그인</button>
       <button class="auth-btn" id="signup-open-btn" onclick="openSignupModal()">회원가입</button>
-      <button class="auth-btn logout-btn" id="logout-btn" onclick="logout()" style="display:none;">
-        로그아웃
-      </button>
+      <button class="auth-btn logout-btn" id="logout-btn" onclick="logout()" style="display:none;">로그아웃</button>
       <div id="auth-status" class="auth-status">비로그인 상태</div>
     </div>
   </div>
@@ -44,102 +43,108 @@
   <main class="main-layout">
     <section class="gift-section">
       <div class="section-header">
-        <h2>기프트 목록</h2>
+        <div class="section-header-left">
+          <h2>기프트 목록</h2>
 
-        <div class="grade-filter">
-          <button class="grade-btn" data-grade="1" onclick="toggleGradeFilter(1)">I</button>
-          <button class="grade-btn" data-grade="2" onclick="toggleGradeFilter(2)">II</button>
-          <button class="grade-btn" data-grade="3" onclick="toggleGradeFilter(3)">III</button>
-          <button class="grade-btn" data-grade="4" onclick="toggleGradeFilter(4)">IV</button>
-          <button class="grade-btn" data-grade="5" onclick="toggleGradeFilter(5)">V</button>
+          <div class="grade-filter">
+            <button class="grade-btn" data-grade="1" onclick="toggleGradeFilter(1)">I</button>
+            <button class="grade-btn" data-grade="2" onclick="toggleGradeFilter(2)">II</button>
+            <button class="grade-btn" data-grade="3" onclick="toggleGradeFilter(3)">III</button>
+            <button class="grade-btn" data-grade="4" onclick="toggleGradeFilter(4)">IV</button>
+            <button class="grade-btn" data-grade="5" onclick="toggleGradeFilter(5)">V</button>
+          </div>
         </div>
+
+        <button class="menu-btn select-reset-btn section-reset-btn" onclick="resetSelectedGifts()">
+          선택 기프트 초기화
+        </button>
       </div>
 
       <div id="preset-view-bar" class="preset-view-bar" style="display:none;">
-  <div id="preset-view-title" class="preset-view-title"></div>
-  <button class="menu-btn" onclick="closePresetView()">돌아가기</button>
-</div>
+        <div id="preset-view-title" class="preset-view-title"></div>
+        <button class="menu-btn" onclick="closePresetView()">돌아가기</button>
+      </div>
 
       <div id="gift-list" class="gift-list"></div>
     </section>
 
     <aside class="side-panel">
-  <section id="preset-panel" class="preset-section">
-    <h2>계정 프리셋</h2>
-    <div id="preset-login-guide" class="preset-login-guide">
-      로그인하면 현재 선택한 기프트 조합을 프리셋으로 저장하고 다른 기기에서도 불러올 수 있어.
-    </div>
-    <div id="preset-list" class="preset-list"></div>
-  </section>
-
-  <section class="admin-section" id="admin-section" style="display:none;">
-    <h2>관리자 기능</h2>
-
-    <div class="admin-form">
-      <label>문서 ID (수정/삭제용)</label>
-      <input type="text" id="gift-id" placeholder="예: burn_01" />
-
-      <label>기프트 이름</label>
-      <input type="text" id="gift-name" placeholder="예: 융해된 파라핀" />
-
-      <label>키워드</label>
-      <select id="gift-keyword">
-        <option value="">선택</option>
-        <option value="화상">화상</option>
-        <option value="출혈">출혈</option>
-        <option value="진동">진동</option>
-        <option value="파열">파열</option>
-        <option value="침잠">침잠</option>
-        <option value="호흡">호흡</option>
-        <option value="충전">충전</option>
-        <option value="참격">참격</option>
-        <option value="관통">관통</option>
-        <option value="타격">타격</option>
-        <option value="범용">범용</option>
-        <option value="EX">EX</option>
-      </select>
-
-      <label>등급</label>
-      <input type="number" id="gift-grade" placeholder="예: 1" min="0" max="5" />
-
-      <label>이미지 경로</label>
-      <input
-        type="text"
-        id="gift-img"
-        placeholder="예: images/burn/융해된파라핀.png"
-        oninput="updatePreview()"
-      />
-
-      <div class="preview-wrap">
-        <div class="gift-icon-wrap preview-icon-wrap">
-          <img src="images/frame.png" class="gift-frame" alt="프레임" />
-          <img id="preview-img" class="gift-icon" style="display:none;" alt="미리보기" />
+      <section id="preset-panel" class="preset-section">
+        <h2>계정 프리셋</h2>
+        <div id="preset-login-guide" class="preset-login-guide">
+          로그인하면 현재 선택한 기프트 조합을 프리셋으로 저장하고 다른 기기에서도 불러올 수 있어.
         </div>
-      </div>
+        <div id="preset-list" class="preset-list"></div>
+      </section>
 
-      <div class="admin-buttons">
-        <button class="save-btn" onclick="addGift()">추가</button>
-        <button class="edit-btn" onclick="updateGift()">수정</button>
-        <button class="delete-btn" onclick="deleteGift()">삭제</button>
-        <button class="reset-btn" onclick="clearAdminForm()">입력 초기화</button>
-      </div>
+      <section class="admin-section" id="admin-section" style="display:none;">
+        <h2>관리자 기능</h2>
 
-      <div class="bulk-add-wrap">
-        <label>일괄 추가</label>
-        <textarea
-          id="bulk-json"
-          rows="10"
-          placeholder="한 줄에 하나씩 입력&#10;예:&#10;burn_01 | 융해된 파라핀 | 화상 | 1 | images/burn/융해된파라핀.png"
-        ></textarea>
+        <div class="admin-form">
+          <label>문서 ID (수정/삭제용)</label>
+          <input type="text" id="gift-id" placeholder="예: burn_01" />
 
-        <div class="bulk-buttons">
-          <button class="save-btn" onclick="bulkAddGifts()">일괄 추가</button>
-          <button class="reset-btn" onclick="clearBulkJson()">입력 비우기</button>
+          <label>기프트 이름</label>
+          <input type="text" id="gift-name" placeholder="예: 융해된 파라핀" />
+
+          <label>키워드</label>
+          <select id="gift-keyword">
+            <option value="">선택</option>
+            <option value="화상">화상</option>
+            <option value="출혈">출혈</option>
+            <option value="진동">진동</option>
+            <option value="파열">파열</option>
+            <option value="침잠">침잠</option>
+            <option value="호흡">호흡</option>
+            <option value="충전">충전</option>
+            <option value="참격">참격</option>
+            <option value="관통">관통</option>
+            <option value="타격">타격</option>
+            <option value="범용">범용</option>
+            <option value="EX">EX</option>
+          </select>
+
+          <label>등급</label>
+          <input type="number" id="gift-grade" placeholder="예: 1" min="0" max="5" />
+
+          <label>이미지 경로</label>
+          <input
+            type="text"
+            id="gift-img"
+            placeholder="예: images/burn/융해된파라핀.png"
+            oninput="updatePreview()"
+          />
+
+          <div class="preview-wrap">
+            <div class="gift-icon-wrap preview-icon-wrap">
+              <img src="images/frame.png" class="gift-frame" alt="프레임" />
+              <img id="preview-img" class="gift-icon" style="display:none;" alt="미리보기" />
+            </div>
+          </div>
+
+          <div class="admin-buttons">
+            <button class="save-btn" onclick="addGift()">추가</button>
+            <button class="edit-btn" onclick="updateGift()">수정</button>
+            <button class="delete-btn" onclick="deleteGift()">삭제</button>
+            <button class="reset-btn" onclick="clearAdminForm()">입력 초기화</button>
+          </div>
+
+          <div class="bulk-add-wrap">
+            <label>일괄 추가</label>
+            <textarea
+              id="bulk-json"
+              rows="10"
+              placeholder="한 줄에 하나씩 입력&#10;예:&#10;burn_01 | 융해된 파라핀 | 화상 | 1 | images/burn/융해된파라핀.png"
+            ></textarea>
+
+            <div class="bulk-buttons">
+              <button class="save-btn" onclick="bulkAddGifts()">일괄 추가</button>
+              <button class="reset-btn" onclick="clearBulkJson()">입력 비우기</button>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-</aside>
+      </section>
+    </aside>
   </main>
 
   <div id="login-modal" class="modal" style="display:none;">
@@ -170,7 +175,73 @@
     </div>
   </div>
 
+  <div id="mobile-menu" class="mobile-menu">
+  <div class="mobile-menu-header">
+    <span>옵션</span>
+    <button type="button" class="auth-btn" onclick="toggleMobileMenu()">✕</button>
+  </div>
+
+  <div class="mobile-menu-body">
+    <section class="mobile-menu-section">
+      <h3 class="mobile-section-title">로그인</h3>
+
+      <div id="mobile-auth-logged-out">
+        <input type="text" id="mobile-login-id" class="mobile-menu-input" placeholder="아이디" />
+        <input type="password" id="mobile-login-password" class="mobile-menu-input" placeholder="비밀번호" />
+
+        <div class="mobile-auth-buttons">
+          <button type="button" class="auth-btn" onclick="mobileLogin()">로그인</button>
+          <button type="button" class="auth-btn" onclick="openSignupModal()">회원가입</button>
+        </div>
+      </div>
+
+      <div id="mobile-auth-logged-in" style="display:none;">
+        <div id="mobile-auth-status-text" class="mobile-auth-status-text"></div>
+        <button type="button" class="auth-btn logout-btn" onclick="logout()">로그아웃</button>
+      </div>
+    </section>
+
+    <section class="mobile-menu-section">
+      <button type="button" class="mobile-accordion-btn" onclick="toggleMobileSection('mobile-keyword-section')">
+        키워드
+      </button>
+
+      <div id="mobile-keyword-section" class="mobile-accordion-content">
+        <div class="mobile-keyword-list">
+          <button class="menu-btn keyword-btn keyword-all active" data-keyword="전체" onclick="toggleKeywordFilter('전체')">전체</button>
+          <button class="menu-btn keyword-btn keyword-burn" data-keyword="화상" onclick="toggleKeywordFilter('화상')">화상</button>
+          <button class="menu-btn keyword-btn keyword-bleed" data-keyword="출혈" onclick="toggleKeywordFilter('출혈')">출혈</button>
+          <button class="menu-btn keyword-btn keyword-vibration" data-keyword="진동" onclick="toggleKeywordFilter('진동')">진동</button>
+          <button class="menu-btn keyword-btn keyword-rupture" data-keyword="파열" onclick="toggleKeywordFilter('파열')">파열</button>
+          <button class="menu-btn keyword-btn keyword-sinking" data-keyword="침잠" onclick="toggleKeywordFilter('침잠')">침잠</button>
+          <button class="menu-btn keyword-btn keyword-breath" data-keyword="호흡" onclick="toggleKeywordFilter('호흡')">호흡</button>
+          <button class="menu-btn keyword-btn keyword-charge" data-keyword="충전" onclick="toggleKeywordFilter('충전')">충전</button>
+          <button class="menu-btn keyword-btn keyword-slash" data-keyword="참격" onclick="toggleKeywordFilter('참격')">참격</button>
+          <button class="menu-btn keyword-btn keyword-pierce" data-keyword="관통" onclick="toggleKeywordFilter('관통')">관통</button>
+          <button class="menu-btn keyword-btn keyword-blunt" data-keyword="타격" onclick="toggleKeywordFilter('타격')">타격</button>
+          <button class="menu-btn keyword-btn keyword-common" data-keyword="범용" onclick="toggleKeywordFilter('범용')">범용</button>
+          <button class="menu-btn keyword-btn keyword-ex" data-keyword="EX" onclick="toggleKeywordFilter('EX')">EX</button>
+          <button class="menu-btn keyword-btn reset-btn" onclick="resetKeywordFilter()">초기화</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="mobile-menu-section">
+      <button type="button" class="mobile-accordion-btn" onclick="toggleMobileSection('mobile-preset-section')">
+        프리셋
+      </button>
+
+      <div id="mobile-preset-section" class="mobile-accordion-content">
+        <div id="mobile-preset-list"></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div id="mobile-menu-backdrop" class="mobile-menu-backdrop"></div>
+
   <script type="module" src="firebase-init.js"></script>
   <script src="script.js"></script>
+  <script src="mobile.js"></script>
 </body>
 </html>
